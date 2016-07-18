@@ -105,7 +105,6 @@ const isDisabled = function(optionDisable) {
 const init = function init(settings, initialClass = '') {
   options = Object.assign(options, settings);
 
-  console.log('initialClass',initialClass);
   initialClassData=initialClass;
   // Create initial array with elements -> to be fullfilled later with prepare()
   $aosElements = elements();
