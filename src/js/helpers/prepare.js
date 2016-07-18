@@ -2,9 +2,9 @@
 
 import calculateOffset from './calculateOffset';
 
-const prepare = function ($elements, options) {
+const prepare = function ($elements, options, initialClass = '') {
   $elements.forEach((el, i) => {
-    el.node.classList.add('aos-init');
+    el.node.classList.add(initialClass + '');
     el.position = calculateOffset(el.node, options.offset);
   });
 

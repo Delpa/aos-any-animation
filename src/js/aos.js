@@ -44,13 +44,13 @@ let options = {
 /**
  * Refresh AOS
  */
-const refresh = function refresh(initialize = false) {
+const refresh = function refresh(initialize = false, initialClass = '') {
   // Allow refresh only when it was first initialized on startEvent
   if (initialize) initialized = true;
 
   if (initialized) {
     // Extend elements objects in $aosElements with their positions
-    $aosElements = prepare($aosElements, options);
+    $aosElements = prepare($aosElements, options, initialClass);
     // Perform scroll event, to refresh view and show/hide elements
     handleScroll($aosElements, options.once);
 
@@ -101,7 +101,7 @@ const isDisabled = function(optionDisable) {
  * - Attach function that handle scroll and everything connected to it
  *   to window scroll event and fire once document is ready to set initial state
  */
-const init = function init(settings) {
+const init = function init(settings, initialClass = '') {
   options = Object.assign(options, settings);
 
   // Create initial array with elements -> to be fullfilled later with prepare()
@@ -119,21 +119,21 @@ const init = function init(settings) {
    * Set global settings on body, based on options
    * so CSS can use it
    */
-  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
+/*  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
   document.querySelector('body').setAttribute('data-aos-duration', options.duration);
   document.querySelector('body').setAttribute('data-aos-delay', options.delay);
-
+*/
   /**
    * Handle initializing
    */
   if (options.startEvent === 'DOMContentLoaded' &&
     ['complete', 'interactive'].indexOf(document.readyState) > -1) {
     // Initialize AOS if default startEvent was already fired
-    refresh(true);
+    refresh(true, initialClass);
   } else {
     // Listen to options.startEvent and initialize AOS
     document.addEventListener(options.startEvent, function() {
-      refresh(true);
+      refresh(true, initialClass);
     });
   }
 
