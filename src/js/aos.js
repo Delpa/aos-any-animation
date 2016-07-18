@@ -23,6 +23,7 @@ import elements from './helpers/elements';
  */
 let $aosElements = [];
 let initialized = false;
+let initialClassData = '';
 
 // Detect not supported browsers (<=IE9)
 // http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
@@ -44,13 +45,13 @@ let options = {
 /**
  * Refresh AOS
  */
-const refresh = function refresh(initialize = false, initialClass = '') {
+const refresh = function refresh(initialize = false) {
   // Allow refresh only when it was first initialized on startEvent
   if (initialize) initialized = true;
-
+  
   if (initialized) {
     // Extend elements objects in $aosElements with their positions
-    $aosElements = prepare($aosElements, options, initialClass);
+    $aosElements = prepare($aosElements, options, initialClassData);
     // Perform scroll event, to refresh view and show/hide elements
     handleScroll($aosElements, options.once);
 
@@ -104,6 +105,8 @@ const isDisabled = function(optionDisable) {
 const init = function init(settings, initialClass = '') {
   options = Object.assign(options, settings);
 
+  console.log('initialClass',initialClass);
+  initialClassData=initialClass;
   // Create initial array with elements -> to be fullfilled later with prepare()
   $aosElements = elements();
 
@@ -119,10 +122,10 @@ const init = function init(settings, initialClass = '') {
    * Set global settings on body, based on options
    * so CSS can use it
    */
-/*  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
+  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
   document.querySelector('body').setAttribute('data-aos-duration', options.duration);
   document.querySelector('body').setAttribute('data-aos-delay', options.delay);
-*/
+
   /**
    * Handle initializing
    */
