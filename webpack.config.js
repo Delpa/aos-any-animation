@@ -20,15 +20,10 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!sass-loader")
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('aos.css'),
     new webpack.optimize.UglifyJsPlugin()
   ]
 }

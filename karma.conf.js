@@ -32,9 +32,6 @@ module.exports = function(config) {
           test: /\.js?$/,
           exclude: [/bower_components/, /node_modules/],
           loader: 'babel'
-        }, {
-          test: /\.scss$/,
-          loader: "css-loader?sourceMap!sass-loader"
         }]
       }
     },

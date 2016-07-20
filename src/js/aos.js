@@ -5,8 +5,6 @@
  * *******************************************************
  */
 
-import styles from './../sass/aos.scss';
-
 // Modules & helpers
 import throttle from 'lodash.throttle';
 import debounce from 'lodash.debounce';
@@ -23,7 +21,6 @@ import elements from './helpers/elements';
  */
 let $aosElements = [];
 let initialized = false;
-let initialClassData = '';
 
 // Detect not supported browsers (<=IE9)
 // http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
@@ -39,7 +36,8 @@ let options = {
   duration: 400,
   disable: false,
   once: false,
-  startEvent: 'DOMContentLoaded'
+  startEvent: 'DOMContentLoaded',
+  initialClass: 'animated'
 };
 
 /**
@@ -51,7 +49,7 @@ const refresh = function refresh(initialize = false) {
   
   if (initialized) {
     // Extend elements objects in $aosElements with their positions
-    $aosElements = prepare($aosElements, options, initialClassData);
+    $aosElements = prepare($aosElements, options);
     // Perform scroll event, to refresh view and show/hide elements
     handleScroll($aosElements, options.once);
 
@@ -102,10 +100,9 @@ const isDisabled = function(optionDisable) {
  * - Attach function that handle scroll and everything connected to it
  *   to window scroll event and fire once document is ready to set initial state
  */
-const init = function init(settings, initialClass = '') {
+const init = function init(settings) {
   options = Object.assign(options, settings);
-
-  initialClassData=initialClass;
+  
   // Create initial array with elements -> to be fullfilled later with prepare()
   $aosElements = elements();
 
@@ -131,11 +128,11 @@ const init = function init(settings, initialClass = '') {
   if (options.startEvent === 'DOMContentLoaded' &&
     ['complete', 'interactive'].indexOf(document.readyState) > -1) {
     // Initialize AOS if default startEvent was already fired
-    refresh(true, initialClass);
+    refresh(true);
   } else {
     // Listen to options.startEvent and initialize AOS
     document.addEventListener(options.startEvent, function() {
-      refresh(true, initialClass);
+      refresh(true);
     });
   }
 

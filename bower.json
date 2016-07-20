@@ -6,8 +6,7 @@
     "Michał Sajnóg <michal.sajnog@hotmail.com>"
   ],
   "main": [
-    "dist/aos.js",
-    "dist/aos.css"
+    "dist/aos.js"
   ],
   "moduleType": [
     "amd",

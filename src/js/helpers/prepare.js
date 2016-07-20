@@ -2,9 +2,9 @@
 
 import calculateOffset from './calculateOffset';
 
-const prepare = function ($elements, options, initialClass = '') {
+const prepare = function ($elements, options) {
   $elements.forEach((el, i) => {
-    el.node.classList.add(initialClass + '');
+    el.node.classList.add(options.initialClass);
     el.position = calculateOffset(el.node, options.offset);
   });
 
