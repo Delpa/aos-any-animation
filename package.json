@@ -1,6 +1,6 @@
 {
-  "name": "aos",
-  "version": "2.0.4",
+  "name": "aos-any-animation",
+  "version": "2.0.5",
   "description": "Animate on scroll library",
   "homepage": "http://michalsnik.github.io/aos/",
   "author": "Michał Sajnóg <michal.sajnog@hotmail.com>",
@@ -8,7 +8,7 @@
   "main": "dist/aos.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michalsnik/aos.git"
+    "url": "https://github.com/Delpa/aos-any-animation.git"
   },
   "bugs": {
     "url": "https://github.com/michalsnik/aos/issues"
