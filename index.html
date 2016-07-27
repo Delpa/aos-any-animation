@@ -1,223 +1,318 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>AOS - Animate on scroll library</title>
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
-		<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
-		<link rel="stylesheet" href="dist/css/styles.css" />
-	</head>
-	<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TK basic animations</title>
+  <link rel="stylesheet" href="assets/animate.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a href="http://www.tektonlabs.com/" class="logo is-simple">Tektonlabs</a>
+  <div id="transcroller-body" class="all">
+    <h3 class="title" data-aos="big">bounce</h3>
+    <div class="item" data-aos="bounce">
+      <div class="item__inner">
+        <h3 class="text">block</h3>
+      </div>
+    </div>
+    <h3 class="title" data-aos="big">flash</h3>
+    <div class="item" data-aos="flash">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">pulse</h3>
+    <div class="item" data-aos="pulse">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rubberBand</h3>
+    <div class="item" data-aos="rubberBand">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">shake</h3>
+    <div class="item" data-aos="shake">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">swing</h3>
+    <div class="item" data-aos="swing">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">tada</h3>
+    <div class="item" data-aos="tada">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">wobble</h3>
+    <div class="item" data-aos="wobble">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">jello</h3>
+    <div class="item" data-aos="jello">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceIn</h3>
+    <div class="item" data-aos="bounceIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceInDown</h3>
+    <div class="item" data-aos="bounceInDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceInLeft</h3>
+    <div class="item" data-aos="bounceInLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceInRight</h3>
+    <div class="item" data-aos="bounceInRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceInUp</h3>
+    <div class="item" data-aos="bounceInUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeIn</h3>
+    <div class="item" data-aos="fadeIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInDown</h3>
+    <div class="item" data-aos="fadeInDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInDownBig</h3>
+    <div class="item" data-aos="fadeInDownBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInLeft</h3>
+    <div class="item" data-aos="fadeInLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInLeftBig</h3>
+    <div class="item" data-aos="fadeInLeftBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInRight</h3>
+    <div class="item" data-aos="fadeInRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInRightBig</h3>
+    <div class="item" data-aos="fadeInRightBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInUp</h3>
+    <div class="item" data-aos="fadeInUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeInUpBig</h3>
+    <div class="item" data-aos="fadeInUpBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
 
-		<div class="backgrounds overlay">
-			<div class="background" data-aos="fade-in" data-aos-duration="1500" data-aos-anchor=".section--hero" style="background-image: url('img/bg.jpg');"></div>
-		</div>
-
-		<header class="hero">
-			<div class="hero-center">
-				<h1 class="hero__logo" data-aos="zoom-in">AOS</h1>
-				<h2 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Animate On Scroll <span>Library</span></h2>
-			</div>
-			<span class="hero__scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
-				Scroll down <br>
-				<i class="chevron bottom"></i>
-			</span>
-			<a href="http://github.com/michalsnik/aos" target="_blank" class="octocat" data-aos="zoom-out" data-aos-delay="1500">
-				<img src="img/github_octocat.png" alt="">
-			</a>
-		</header>
-
-		<section class="section section--code">
-			<div class="container">
-				<h2 class="section-title">Fade</h2>
-				<div class="code code--small code--left" data-aos="fade-up">
-					<pre><code class="html">&lt;div data-aos="fade-up">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-down">
-					<pre><code>&lt;div data-aos="fade-down">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="fade-right">
-					<pre><code>&lt;div data-aos="fade-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-left">
-					<pre><code>&lt;div data-aos="fade-left">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="fade-up-right">
-					<pre><code>&lt;div data-aos="fade-up-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-up-left">
-					<pre><code>&lt;div data-aos="fade-up-left">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="fade-down-right">
-					<pre><code>&lt;div data-aos="fade-down-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="fade-down-left">
-					<pre><code>&lt;div data-aos="fade-down-left">&lt;/div></code></pre>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section--code">
-			<div class="container">
-				<h2 class="section-title">Flip</h2>
-				<div class="code code--small code--left" data-aos="flip-left">
-					<pre><code>&lt;div data-aos="flip-left">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="flip-right">
-					<pre><code>&lt;div data-aos="flip-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="flip-up">
-					<pre><code>&lt;div data-aos="flip-up">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="flip-down">
-					<pre><code>&lt;div data-aos="flip-down">&lt;/div></code></pre>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section--code">
-			<div class="container">
-				<h2 class="section-title">Zoom</h2>
-				<div class="code code--small code--left" data-aos="zoom-in">
-					<pre><code>&lt;div data-aos="zoom-in">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-in-up">
-					<pre><code>&lt;div data-aos="zoom-in-up">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-in-down">
-					<pre><code>&lt;div data-aos="zoom-in-down">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-in-left">
-					<pre><code>&lt;div data-aos="zoom-in-left">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-in-right">
-					<pre><code>&lt;div data-aos="zoom-in-right">&lt;/div></code></pre>
-				</div>
-
-				<div class="code code--small code--right" data-aos="zoom-out">
-					<pre><code>&lt;div data-aos="zoom-out">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-out-up">
-					<pre><code>&lt;div data-aos="zoom-out-up">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-out-down">
-					<pre><code>&lt;div data-aos="zoom-out-down">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-out-right">
-					<pre><code>&lt;div data-aos="zoom-out-right">&lt;/div></code></pre>
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-out-left">
-					<pre><code>&lt;div data-aos="zoom-out-left">&lt;/div></code></pre>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section--code">
-			<div class="container">
-				<h2 class="section-title">Different settings examples</h2>
-				<div class="code code--left" data-aos="fade-up" data-aos-duration="3000">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="3000">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-					<pre><code>&lt;div data-aos="fade-down"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="linear"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="1500">&#13;&lt;/div></code></pre>
-				</div>
-				<div id="example-anchor" class="code code--left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-					<pre><code>&lt;div data-aos="fade-right"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-in-sine">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--right" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-					<pre><code>&lt;div data-aos="fade-left"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor="#example-anchor"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="500"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="500">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--left" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-					<pre><code>&lt;div data-aos="fade-zoom-in"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-in-back"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-delay="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="0">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-					<pre><code>&lt;div data-aos="flip-left"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-out-cubic"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="2000">&#13;&lt;/div></code></pre>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section--code">
-			<div class="container">
-				<h2 class="section-title">Anchor placement</h2>
-
-				<div class="code code--wider code--left" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="top-bottom">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--wider code--right" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="center-bottom">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--wider code--left" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="bottom-bottom">&#13;&lt;/div></code></pre>
-				</div>
-
-				<div class="code code--wider code--right" data-aos="fade-up" data-aos-anchor-placement="top-center">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="top-center">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--wider code--left" data-aos="fade-up" data-aos-anchor-placement="center-center">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="center-center">&#13;&lt;/div></code></pre>
-				</div>
-				<div class="code code--wider code--right" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
-					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor-placement="bottom-center">&#13;&lt;/div></code></pre>
-				</div>
-
-			</div>
-		</section>
-
-		<section class="section section--more">
-			<div class="container">
-				<div class="section-group">
-					<h3>Get it</h3>
-
-					<a href="https://github.com/michalsnik/aos/archive/master.zip" class="btn"><span>Download</span></a>
-					<a href="https://github.com/michalsnik/aos" target="_blank" class="btn"><span>View on github</span></a>
-				</div>
-
-				<div class="section-group">
-					<h3>Install using bower</h3>
-
-					<pre><code>bower install aos --save</code></pre>
-				</div>
-
-				<div class="section-group">
-					<h3>CDN sources</h3>
-					<h4>CSS</h4>
-					<pre><code>&lt;link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"></code></pre>
-
-					<h4>JS</h4>
-					<pre><code>&lt;script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></code></pre>
-				</div>
-
-			</div>
-		</section>
-
-		<footer class="footer">
-			<div class="container">
-
-			</div>
-		</footer>
-
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-
-		<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
-
-		<script>
-			AOS.init({
-				easing: 'ease-out-back',
-				duration: 1000
-			});
-		</script>
-
-		<script>
-			hljs.initHighlightingOnLoad();
-
-			$('.hero__scroll').on('click', function(e) {
-				$('html, body').animate({
-					scrollTop: $(window).height()
-				}, 1200);
-			});
-		</script>
-	</body>
+    <h3 class="title" data-aos="big">flip</h3>
+    <div class="item" data-aos="flip">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">flipInX</h3>
+    <div class="item" data-aos="flipInX">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">flipInY</h3>
+    <div class="item" data-aos="flipInY">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">lightSpeedIn</h3>
+    <div class="item" data-aos="lightSpeedIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateIn</h3>
+    <div class="item" data-aos="rotateIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateInDownLeft</h3>
+    <div class="item" data-aos="rotateInDownLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateInDownRight</h3>
+    <div class="item" data-aos="rotateInDownRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateInUpLeft</h3>
+    <div class="item" data-aos="rotateInUpLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateInUpRight</h3>
+    <div class="item" data-aos="rotateInUpRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideInUp</h3>
+    <div class="item" data-aos="slideInUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideInDown</h3>
+    <div class="item" data-aos="slideInDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideInLeft</h3>
+    <div class="item" data-aos="slideInLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideInRight</h3>
+    <div class="item" data-aos="slideInRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomIn</h3>
+    <div class="item" data-aos="zoomIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomInDown</h3>
+    <div class="item" data-aos="zoomInDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomInLeft</h3>
+    <div class="item" data-aos="zoomInLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomInRight</h3>
+    <div class="item" data-aos="zoomInRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomInUp</h3>
+    <div class="item" data-aos="zoomInUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rollIn</h3>
+    <div class="item" data-aos="rollIn">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceOut</h3>
+    <div class="item" data-aos="bounceOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceOutDown</h3>
+    <div class="item" data-aos="bounceOutDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceOutLeft</h3>
+    <div class="item" data-aos="bounceOutLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceOutRight</h3>
+    <div class="item" data-aos="bounceOutRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">bounceOutUp</h3>
+    <div class="item" data-aos="bounceOutUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOut</h3>
+    <div class="item" data-aos="fadeOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutDown</h3>
+    <div class="item" data-aos="fadeOutDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutDownBig</h3>
+    <div class="item" data-aos="fadeOutDownBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutLeft</h3>
+    <div class="item" data-aos="fadeOutLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutLeftBig</h3>
+    <div class="item" data-aos="fadeOutLeftBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutRight</h3>
+    <div class="item" data-aos="fadeOutRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutRightBig</h3>
+    <div class="item" data-aos="fadeOutRightBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutUp</h3>
+    <div class="item" data-aos="fadeOutUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">fadeOutUpBig</h3>
+    <div class="item" data-aos="fadeOutUpBig">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">flipOutX</h3>
+    <div class="item" data-aos="flipOutX">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">flipOutY</h3>
+    <div class="item" data-aos="flipOutY">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">lightSpeedOut</h3>
+    <div class="item" data-aos="lightSpeedOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateOut</h3>
+    <div class="item" data-aos="rotateOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateOutDownLeft</h3>
+    <div class="item" data-aos="rotateOutDownLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateOutDownRight</h3>
+    <div class="item" data-aos="rotateOutDownRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateOutUpLeft</h3>
+    <div class="item" data-aos="rotateOutUpLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rotateOutUpRight</h3>
+    <div class="item" data-aos="rotateOutUpRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideOutUp</h3>
+    <div class="item" data-aos="slideOutUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideOutDown</h3>
+    <div class="item" data-aos="slideOutDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideOutLeft</h3>
+    <div class="item" data-aos="slideOutLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">slideOutRight</h3>
+    <div class="item" data-aos="slideOutRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomOut</h3>
+    <div class="item" data-aos="zoomOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomOutDown</h3>
+    <div class="item" data-aos="zoomOutDown">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomOutLeft</h3>
+    <div class="item" data-aos="zoomOutLeft">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomOutRight</h3>
+    <div class="item" data-aos="zoomOutRight">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">zoomOutUp</h3>
+    <div class="item" data-aos="zoomOutUp">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">hinge</h3>
+    <div class="item" data-aos="hinge">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+    <h3 class="title" data-aos="big">rollOut</h3>
+    <div class="item" data-aos="rollOut">
+       <div class="item__inner"><h3 class="text">block</h3></div>
+    </div>
+  </div>
+  <script src="assets/bundle.js"></script>
+</body>
 </html>
