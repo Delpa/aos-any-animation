@@ -1,4 +1,4 @@
-Welcome to AOSAA! /play sexyback
+Welcome to AOSAA!
 =================
 
 Small library to animate elements on your page as you scroll.
@@ -21,7 +21,7 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
     AOSAA.init();
   </script>
 ```
-## 🤔 How to use it?
+## ⚙ How to use it?
 
 ### Usage
 
