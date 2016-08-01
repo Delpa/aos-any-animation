@@ -4,7 +4,7 @@
  * like 'position'
  */
 const createArrayWithElements = function (elements) {
-  elements = elements || document.querySelectorAll('[data-aos]');
+  elements = elements || document.querySelectorAll('[data-aosaa]');
   let finalElements = [];
 
   [].forEach.call(elements, function(el, i) {

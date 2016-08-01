@@ -5,7 +5,7 @@
   "homepage": "http://michalsnik.github.io/aos/",
   "author": "Michał Sajnóg <michal.sajnog@hotmail.com>",
   "license": "MIT",
-  "main": "dist/aos.js",
+  "main": "dist/aosaa.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Delpa/aos-any-animation.git"

@@ -2,13 +2,13 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/aos.js',
+  entry: './src/js/aosaa.js',
   devtool: 'source-map',
   output: {
     path: './dist',
     publicPath: 'dist/',
-    filename: 'aos.js',
-    library: 'AOS',
+    filename: 'aosaa.js',
+    library: 'AOSAA',
     libraryTarget: 'umd',
     sourceMapFilename: '[file].map'
   },

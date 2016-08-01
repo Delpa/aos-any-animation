@@ -1,6 +1,6 @@
 /**
  * *******************************************************
- * AOS (Animate on scroll) - wowjs alternative
+ * AOSAA (Animate on scroll) - wowjs alternative
  * made to animate elements on scroll in both directions
  * *******************************************************
  */
@@ -41,7 +41,7 @@ let options = {
 };
 
 /**
- * Refresh AOS
+ * Refresh AOSAA
  */
 const refresh = function refresh(initialize = false) {
   // Allow refresh only when it was first initialized on startEvent
@@ -67,21 +67,21 @@ const refreshHard = function refreshHard() {
 };
 
 /**
- * Disable AOS
+ * Disable AOSAA
  * Remove all attributes to reset applied styles
  */
 const disable = function() {
   $aosElements.forEach(function(el, i) {
-    el.node.removeAttribute('data-aos');
-    el.node.removeAttribute('data-aos-easing');
-    el.node.removeAttribute('data-aos-duration');
-    el.node.removeAttribute('data-aos-delay');
+    el.node.removeAttribute('data-aosaa');
+    el.node.removeAttribute('data-aosaa-easing');
+    el.node.removeAttribute('data-aosaa-duration');
+    el.node.removeAttribute('data-aosaa-delay');
   });
 };
 
 
 /**
- * Check if AOS should be disabled based on provided setting
+ * Check if AOSAA should be disabled based on provided setting
  */
 const isDisabled = function(optionDisable) {
   return optionDisable === true ||
@@ -92,7 +92,7 @@ const isDisabled = function(optionDisable) {
 };
 
 /**
- * Initializing AOS
+ * Initializing AOSAA
  * - Create options merging defaults with user defined options
  * - Set attributes on <body> as global setting - css relies on it
  * - Attach preparing elements to options.startEvent,
@@ -118,19 +118,19 @@ const init = function init(settings) {
    * Set global settings on body, based on options
    * so CSS can use it
    */
-  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
-  document.querySelector('body').setAttribute('data-aos-duration', options.duration);
-  document.querySelector('body').setAttribute('data-aos-delay', options.delay);
+  document.querySelector('body').setAttribute('data-aosaa-easing', options.easing);
+  document.querySelector('body').setAttribute('data-aosaa-duration', options.duration);
+  document.querySelector('body').setAttribute('data-aosaa-delay', options.delay);
 
   /**
    * Handle initializing
    */
   if (options.startEvent === 'DOMContentLoaded' &&
     ['complete', 'interactive'].indexOf(document.readyState) > -1) {
-    // Initialize AOS if default startEvent was already fired
+    // Initialize AOSAA if default startEvent was already fired
     refresh(true);
   } else {
-    // Listen to options.startEvent and initialize AOS
+    // Listen to options.startEvent and initialize AOSAA
     document.addEventListener(options.startEvent, function() {
       refresh(true);
     });
@@ -155,17 +155,17 @@ const init = function init(settings) {
    */
   document.addEventListener('DOMNodeRemoved', (event) => {
     const el = event.target;
-    if (el && el.nodeType === 1 && el.hasAttribute && el.hasAttribute('data-aos')) {
+    if (el && el.nodeType === 1 && el.hasAttribute && el.hasAttribute('data-aosaa')) {
       debounce(refreshHard, 50, true)
     }
   });
 
   /**
-   * Observe [aos] elements
+   * Observe [aosaa] elements
    * If something is loaded by AJAX
    * it'll refresh plugin automatically
    */
-  observe('[data-aos]', refreshHard);
+  observe('[data-aosaa]', refreshHard);
 
   return $aosElements;
 };

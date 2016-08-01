@@ -5,8 +5,8 @@
  * @param {void} once
  */
 const setState = function (el, top, once) {
-  const attrOnce = el.node.getAttribute('data-aos-once');
-  const attrClass = el.node.getAttribute('data-aos');
+  const attrOnce = el.node.getAttribute('data-aosaa-once');
+  const attrClass = el.node.getAttribute('data-aosaa');
   if (top > el.position) {
     el.node.classList.add(attrClass);
   } else if (typeof attrOnce !== 'undefined') {
