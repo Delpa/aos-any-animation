@@ -38,7 +38,7 @@ Using `npm`
 ```html
   <div data-aosaa="animation_name">
 ```
-  Script will added "animation name" in the class on this element, if you scroll to it
+  Script will added "animation name" in the class on this element, if you scroll to it.
   
 ####Examples:
 ```html
@@ -67,9 +67,9 @@ These settings can be set only in options object while initializing AOSAA.
 
 ##### Initial Class AOSAA
 
-Default is added 'animated' in class when is AOSAA initialized
+Default is added 'animated' in class when is AOSAA initialized.
 
-example
+example:
 ```javascript
 //when it has already been initialized automatic is added 'animated' 
 <div class="foo animated" data-aosaa="bar">
@@ -114,3 +114,4 @@ There is also posibility to pass a `function`, which should at the end return `t
 ```
 
 ### :v: this is a fork of AOS.
+Enjoy.
