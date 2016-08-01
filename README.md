@@ -4,8 +4,8 @@ Welcome to AOSAA!
 Small library to animate elements on your page as you scroll.
 
 **If you need to use external CSS, this is your repository.**
-If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with its integrated animations
-### :shipit: [Demo](http://Delpa.github.io/aos-any-animation/)
+If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with its integrated animations.
+### :shipit: [Demo](http://Delpa.github.io/aos-any-animation/) (src: https://github.com/Delpa/demo-aosaa)
 ----------
 
 ## ⚙ Setup
@@ -75,7 +75,7 @@ example
 <div class="foo animated" data-aosaa="bar">
 ```
 
-If you want to change de 'animated'you can set `initialClass` option. Like so:
+If you want to change de 'animated' you can set `initialClass` option. Like so:
 
 ```javascript
   <script>
@@ -113,4 +113,4 @@ There is also posibility to pass a `function`, which should at the end return `t
   }
 ```
 
-### :v: this is a fork of AOS
+### :v: this is a fork of AOS.
