@@ -12,7 +12,7 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
 - Using `npm`
     
     ```bash
-      npm install npm install github:delpa/aos-any-animation --save
+      npm install github:delpa/aos-any-animation --save
     ```
 ### Init AOSAA
 
