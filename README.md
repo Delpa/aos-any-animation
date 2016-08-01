@@ -14,10 +14,10 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
     ```bash
       npm install npm install github:delpa/aos-any-animation --save
     ```
-### Init AOS
+### Init AOSAA
 
 ```javascript
   <script>
-    AOS.init();
+    AOSAA.init();
   </script>
 ```
