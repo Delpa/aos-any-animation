@@ -40,7 +40,7 @@ Using `npm`
 ```
   Script will added "animation name" in the class on this element, if you scroll to it.
   
-####Examples:
+####Examples
 ```html
   <div class="foo " data-aosaa="bar">
 ```
@@ -69,7 +69,7 @@ These settings can be set only in options object while initializing AOSAA.
 
 Default is added 'animated' in class when is AOSAA initialized.
 
-example:
+####Example:
 ```javascript
 //when it has already been initialized automatic is added 'animated' 
 <div class="foo animated" data-aosaa="bar">
