@@ -9,6 +9,7 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
 ----------
 
 ## ⚙ Setup
+### Install AOS
 - Using `npm`
     
     ```bash
