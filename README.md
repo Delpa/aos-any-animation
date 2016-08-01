@@ -1,5 +1,4 @@
-# AOSAA - Page with examples and demos
-
-Demo of aos-any-animation with animate.css
+# demo-aosaa
+Demo of [aos-any-animation](https://github.com/Delpa/aos-any-animation) with [animate.css](https://daneden.github.io/animate.css/)
 
 Created to tektonlabs
