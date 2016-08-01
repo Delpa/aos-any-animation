@@ -69,7 +69,7 @@ These settings can be set only in options object while initializing AOSAA.
 
 Default is added 'animated' in class when is AOSAA initialized.
 
-####Example:
+Example:
 ```javascript
 //when it has already been initialized automatic is added 'animated' 
 <div class="foo animated" data-aosaa="bar">
