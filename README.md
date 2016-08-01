@@ -9,4 +9,15 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
 ----------
 
 ## ⚙ Setup
-https://stackedit.io/editor#synchronization
+- Using `npm`
+    
+    ```bash
+      npm install npm install github:delpa/aos-any-animation --save
+    ```
+### Init AOS
+
+```javascript
+  <script>
+    AOS.init();
+  </script>
+```
