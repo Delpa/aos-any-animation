@@ -40,7 +40,7 @@ Using `npm`
 ```
   Script will added "animation name" in the class on this element, if you scroll to it.
   
-####Examples
+####Example:
 ```html
   <div class="foo " data-aosaa="bar">
 ```
