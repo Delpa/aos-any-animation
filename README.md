@@ -18,17 +18,17 @@ If not, then I recommend [AOS](http://michalsnik.github.io/aos/) that comes with
     
 ### Add scripts
 
-```html
-  <script src="node_modules/aos-any-animation/dist/aosaa.js"></script>
-```
+    ```html
+    <script src="node_modules/aos-any-animation/dist/aosaa.js"></script>
+    ```
 
 ### Init AOSAA
 
-```javascript
-  <script>
-    AOSAA.init();
-  </script>
-```
+    ```javascript
+    <script>
+      AOSAA.init();
+    </script>
+    ```
 ## ⚙ How to use it?
 
 ### Usage
