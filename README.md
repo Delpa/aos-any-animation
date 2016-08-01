@@ -69,12 +69,22 @@ These settings can be set only in options object while initializing AOSAA.
 
 Default is added 'animated' in class when is AOSAA initialized
 
+example
 ```javascript
-//when it has already been initialized 
+//when it has already been initialized automatic is added 'animated' 
 <div class="foo animated" data-aosaa="bar">
 ```
 
-If you want to change de 'animated' AOS on certain device or under any statement you can set `disable` option. Like so:
+If you want to change de 'animated'you can set `initialClass` option. Like so:
+
+```javascript
+  <script>
+    AOSAA.init({
+      initialClass: 'animated-very-fast'
+    });
+  </script>
+```
+
 ##### Disabling AOSAA
 
 If you want to disable AOS on certain device or under any statement you can set `disable` option. Like so:
