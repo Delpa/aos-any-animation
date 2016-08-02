@@ -87,7 +87,7 @@ If you want to change de 'animated' you can set `initialClass` option. Like so:
 
 ##### Disabling AOSAA
 
-If you want to disable AOS on certain device or under any statement you can set `disable` option. Like so:
+If you want to disable AOSAA on certain device or under any statement you can set `disable` option. Like so:
 
 ```javascript
   <script>
